@@ -1,0 +1,38 @@
+<div class="card flex justify-content-center">
+    <p-card header="Cadastro de Lançamentos:">
+
+        <div class="card flex justify-content-center">
+            <h1>Digite o nome:</h1>
+            <input type="text" pInputText [(ngModel)]="nome" />
+        </div>
+
+        <div class="card flex justify-content-center">
+            <h1>Digite a Descricao:</h1>
+            <input type="text" pInputText [(ngModel)]="descricao" />
+        </div>
+
+        <div class="flex-auto">
+            <label for="buttondisplay" class="font-bold block mb-2"> Button </label>
+            <p-calendar 
+                [(ngModel)]="data" 
+                [showIcon]="true" 
+                inputId="buttondisplay" 
+                [showOnFocus]="false" />
+        </div>
+        
+        <div class="card flex justify-content-center">
+            <h1>Digite o tipo:</h1>
+            <input type="text" pInputText [(ngModel)]="tipo" />
+        </div>
+
+        <div class="card flex justify-content-center">
+            <h1>Digite o valor:</h1>
+            <input type="text" pInputText [(ngModel)]="valor" />
+        </div>
+        
+        <div class="card flex justify-content-center">
+            <h1>Digite a categoria:</h1>
+            <input type="text" pInputText [(ngModel)]="categoria" />
+        </div>
+    </p-card>
+</div>
