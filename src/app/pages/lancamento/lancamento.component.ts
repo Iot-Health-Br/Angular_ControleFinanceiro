@@ -13,7 +13,7 @@ import { CardModule } from 'primeng/card';
 export class LancamentoComponent {
   nome: string = '';
   descricao: string= '';
-  data: Date ;
+  data: Date | undefined ;
   tipo: string = '';
   valor: string = '';
   categoria:string = '';

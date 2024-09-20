@@ -1,1 +1,14 @@
-<p>meta works!</p>
+<div class="container">
+  <div class="card-flex">
+    <h1>Cadastro da Meta:</h1>
+    <div class="input-group">
+      <input type="text" pInputText placeholder="Tipo da Meta" [(ngModel)]="tipo" />
+      <input type="text" pInputText placeholder="Valor da Meta" [(ngModel)]="valor" />
+    </div>
+    <div class="button-group">
+      <p-button label="Save" icon="pi pi-check" styleClass="save-button"></p-button>
+      <p-button label="Delete" icon="pi pi-trash" styleClass="delete-button"></p-button>
+      <p-button label="Cancel" icon="pi pi-times" styleClass="cancel-button"></p-button>
+    </div>
+  </div>
+</div>

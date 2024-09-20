@@ -53,28 +53,6 @@ p-button {
   flex: 1; /* Faz com que os botões se ajustem proporcionalmente */
 }
 
-/* Estilos para o botão de salvar */
-.save-button .p-button {
-  background-color: green !important;
-  border-color: green !important;
-  color: white !important;
-}
-
-/* Estilos para o botão de deletar */
-.delete-button .p-button {
-  background-color: red !important;
-  border-color: red !important;
-  color: white !important;
-}
-
-/* Estilos para o botão de cancelar */
-.cancel-button .p-button {
-  background-color: gray !important;
-  border-color: gray !important;
-  color: white !important;
-}
-
-
 
 /* Media queries para ajustes em telas maiores */
 @media (min-width: 600px) {
