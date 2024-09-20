@@ -2,10 +2,10 @@
   <div class="card-flex">
     <h1>Home</h1>
     <div class="button-group">
-      <p-button label="Tela Grupo" [raised]="true" />
-      <p-button label="Tela Lançamento" [raised]="true"/>
-      <p-button label="Tela Meta" [raised]="true"/>
-      <p-button label="Tela Pessoa" [raised]="true"/>
+      <p-button label="Tela Grupo" [raised]="true" (click)="navigateToGrupo()" />
+      <p-button label="Tela Lançamento" [raised]="true" (click)="navigateToLancamento()" />
+      <p-button label="Tela Meta" [raised]="true" (click)="navigateToMeta()" />
+      <p-button label="Tela Pessoa" [raised]="true" (click)="navigateToPessoa()" />
     </div>
   </div>
 </div>
