@@ -41,6 +41,27 @@ html, body {
   box-sizing: border-box;
 }
 
+/*Manter as combobox no mesmo tamanho dos campos de input*/
+.input-group input,
+.input-group .combobox-categoria,
+.input-group .combobox-tipo {
+  width: 60%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.input-group .combobox-categoria,
+.input-group .combobox-tipo {
+  display: inline-block;
+}
+.input-group .combobox-categoria ::ng-deep .p-treeselect,
+.input-group .combobox-tipo ::ng-deep .p-treeselect {
+  width: 100%;
+}
+.input-group .combobox-categoria ::ng-deep .p-treeselect-label-container,
+.input-group .combobox-tipo ::ng-deep .p-treeselect-label-container {
+  height: 38px;
+}
+
 /* Para os botões serem responsivos */
 .button-group {
   display: flex;
