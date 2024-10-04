@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {pessoa} from "../models/pessoa";
+import {pessoa} from "../../app/models/pessoa";
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +12,7 @@ export class PessoasService {
   constructor(private http: HttpClient) {}
 
   // Método para salvar uma pessoa
-  savePessoas(pessoa: pessoa): Observable<pessoa> {
-    return this.http.post<pessoa>(this.apiUrl, pessoa);
+  savePessoa(pessoa: pessoa): Observable<String> {
+    return this.http.post<String>(this.apiUrl, pessoa);
   }
 }

@@ -38,10 +38,11 @@
     <h1>Cadastro de Grupo</h1>
     <div class="input-group">
       <input type="text" pInputText placeholder="Nome do Grupo" [(ngModel)]="nome" />
-      <input type="text" pInputText placeholder="Nome da Descrição" [(ngModel)]="descricao" />
+      <input type="text" pInputText placeholder="Descrição" [(ngModel)]="descricao" />
+      <input type="text" pInputText placeholder="Valor" [(ngModel)]="saldo" />
     </div>
     <div class="button-group">
-      <p-button label="Save" icon="pi pi-check" styleClass="save-button"></p-button>
+      <p-button label="Save" icon="pi pi-check" styleClass="save-button"  (onClick)="saveGroup()"></p-button>
       <p-button label="Delete" icon="pi pi-trash" styleClass="delete-button"></p-button>
       <p-button label="Cancel" icon="pi pi-times" styleClass="cancel-button"></p-button>
     </div>

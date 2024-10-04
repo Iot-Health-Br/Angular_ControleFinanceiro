@@ -12,7 +12,7 @@ export class GrupoService {
   constructor(private http: HttpClient) {}
 
   // Método para salvar uma grupo
-  saveGrupo(grupo: grupo): Observable<grupo> {
+  saveGroup(grupo: grupo): Observable<grupo> {
     return this.http.post<grupo>(this.apiUrl, grupo);
   }
 }
